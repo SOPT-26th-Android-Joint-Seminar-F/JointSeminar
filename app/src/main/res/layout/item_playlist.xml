@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginRight="10dp">
+
+    <ImageView
+        android:id="@+id/iv_playlist"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:background="@drawable/round_image_background"
+        android:src="@drawable/mainview_img_playlist_1"/>
+
+    <TextView
+        android:id="@+id/tv_title_playlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="유럽 비행기에서 볼 것"
+        android:fontFamily="@font/font_bold"
+        android:textSize="12sp"
+        android:includeFontPadding="false"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tv_cnt_playlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="12개"
+        android:fontFamily="@font/font_regular"
+        android:textSize="10sp"
+        android:includeFontPadding="false"
+        android:textColor="@color/redFond"/>
+
+    <TextView
+        android:id="@+id/tv_date_playlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020.05.22"
+        android:fontFamily="@font/font_regular"
+        android:textSize="10sp"
+        android:includeFontPadding="false"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>
