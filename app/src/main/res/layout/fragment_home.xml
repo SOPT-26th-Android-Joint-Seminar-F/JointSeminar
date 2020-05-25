@@ -1,19 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@android:color/black"
-    tools:context=".HomeFragment">
+    android:background="@android:color/black">
 
-    <!-- TODO: 포스터 (평화) -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:orientation="vertical"
+        tools:context=".HomeFragment">
+
+        <!-- TODO: 포스터 (평화) -->
 
 
-    <!-- TODO: 콘텐츠 (희원) -->
+        <!-- TODO: 콘텐츠 (희원) -->
 
 
-    <!-- TODO: 플레이리스트 (혜란) -->
+        <!-- TODO: 플레이리스트 (혜란) -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_bold"
+                android:includeFontPadding="false"
+                android:text="이영진님의 플레이 리스트"
+                android:textColor="@android:color/white"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="48dp"
+                android:background="@drawable/mainview_btn_all_4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:orientation="horizontal">
 
 
-</LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_playlist_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_playlist" />
+
+                <ImageButton
+                    android:id="@+id/btn_add_playlist_home"
+                    android:layout_width="49dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="39dp"
+                    android:layout_marginRight="45dp"
+                    android:background="@drawable/mainview_btn_playlistadd" />
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginHorizontal="25dp"
+                android:background="@drawable/mainview_scroll_2" />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="4dp"
+                android:layout_marginHorizontal="25dp"
+                android:background="@drawable/mainview_scroll_7" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="71dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/gray_round_button"
+            android:fontFamily="@font/font_medium"
+            android:includeFontPadding="false"
+            android:text="편집"
+            android:textColor="#ccffffff"
+            android:textSize="13sp"
+            android:layout_marginBottom="32dp"/>
+
+
+    </LinearLayout>
+</ScrollView>
