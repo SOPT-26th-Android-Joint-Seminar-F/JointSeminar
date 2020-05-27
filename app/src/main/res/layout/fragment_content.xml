@@ -1,9 +1,317 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black"
     tools:context=".ContentFragment">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="729dp"
+        android:backgroundTint="#212020"
+        tools:layout_editor_absoluteY="1dp">
+
+        <ImageButton
+            android:id="@+id/contentsview_btnx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="295dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="17dp"
+            android:background="@drawable/contentsview_icon_x"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/contentsview_image"
+            android:layout_width="172dp"
+            android:layout_height="253dp"
+            android:layout_marginStart="94dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="94dp"
+            android:src="@drawable/contentsview_img_heartsignal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/contentsview_playbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="154dp"
+            android:layout_marginTop="138dp"
+            android:layout_marginEnd="153dp"
+            android:backgroundTint="?android:attr/panelBackground"
+            android:src="@drawable/contentsview_btn_play"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/contentsview_txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="305dp"
+            android:layout_marginEnd="238dp"
+            android:fontFamily="@font/font_bold"
+            android:lineSpacingExtra="7sp"
+            android:text="2020"
+            android:textColor="#929291"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/contentsview_tx2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="135dp"
+            android:layout_marginTop="305dp"
+            android:layout_marginEnd="190dp"
+            android:width="35dp"
+            android:height="22dp"
+            android:background="@drawable/contentsview_15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/contentsview_txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="184dp"
+            android:layout_marginTop="305dp"
+            android:layout_marginEnd="126dp"
+            android:fontFamily="@font/font_bold"
+            android:lineSpacingExtra="6sp"
+            android:text="시즌 1개"
+            android:textColor="#949495"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/contentsview_txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="244dp"
+            android:layout_marginTop="305dp"
+            android:layout_marginEnd="85dp"
+            android:background="@drawable/contentsview_hd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/contentsview_top10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="340dp"
+            android:layout_marginEnd="261dp"
+            android:background="@drawable/contentsview_icon_topten"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+
+            android:id="@+id/contentsview_txt5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="118dp"
+            android:layout_marginTop="346dp"
+            android:layout_marginEnd="65dp"
+            android:fontFamily="@font/font_bold"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="6sp"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="오늘 한국에서 콘텐츠 순위 2위" />
+
+        <TextView
+            android:id="@+id/contentsview_txt6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="106dp"
+            android:layout_marginTop="395dp"
+            android:layout_marginEnd="213dp"
+            android:background="@drawable/mainview_btn_reality"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/contentsview_txt7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="159dp"
+            android:layout_marginTop="395dp"
+            android:layout_marginEnd="176dp"
+            android:background="@drawable/mainview_btn_love"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/contentsview_txt8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="194dp"
+            android:layout_marginTop="395dp"
+            android:layout_marginEnd="142dp"
+            android:background="@drawable/mainview_btn_variety"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/contentsview_txt9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="228dp"
+            android:layout_marginTop="395dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/mainview_btn_ordinary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/contentsview_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="430dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/contentsview_btn_playtwo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="481dp"
+            android:layout_marginEnd="196dp"
+            android:fontFamily="@font/font_bold"
+            android:lineSpacingExtra="6sp"
+            android:text="시즌 3: 6화 2020-05-06"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="232dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="514dp"
+            android:layout_marginEnd="100dp"
+            android:backgroundTint="#808080"
+            android:progressTint=" #ca1a1e"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="279dp"
+            android:layout_marginTop="508dp"
+            android:layout_marginEnd="21dp"
+            android:textSize="9sp"
+            android:textColor="#a2a2a2"
+            android:lineSpacingExtra="4sp"
+            tools:text="남은 시간 : 20분"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="313dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="540dp"
+            android:layout_marginEnd="29dp"
+            android:lineSpacingExtra="5sp"
+            android:textColor="#a2a2a2"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.675"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="처음 뵙겠습니다. 7번째 입주자 &apos;사자&apos;의 등장으로 술렁이는 시그널 하우스.
+            미묘한 긴장감을 부르는 강렬한 캐릭터의 이 남자는 러브라인의 판도를 바
+            꿀 수 있을까?" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+
+            android:layout_marginTop="597dp"
+            android:layout_marginEnd="213dp"
+            android:lineSpacingExtra="5sp"
+            android:textColor="#a2a2a2"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="출연 : 이상민, 윤시윤, 김이나" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="69dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="633dp"
+            android:layout_marginEnd="272dp"
+            android:background="@drawable/contentsview_icon_mylist_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="105dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="633dp"
+            android:layout_marginEnd="167dp"
+            android:background="@drawable/contentsview_icon_star"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="47dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="193dp"
+            android:layout_marginTop="633dp"
+            android:layout_marginEnd="120dp"
+            android:background="@drawable/contentsview_icon_share"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
