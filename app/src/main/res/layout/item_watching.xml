@@ -23,8 +23,8 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:src="@drawable/mainview_icon_info_1"
             app:layout_constraintBottom_toBottomOf="@+id/iv_watching"
             app:layout_constraintEnd_toEndOf="@+id/iv_watching"
@@ -47,6 +47,19 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/iv_watching"
             tools:text="시즌 1: 10회" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:progressTint="#e50914"
+            android:background="#808080"
+            android:max="100"
+            android:progress="78"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="@+id/iv_watching"
+            app:layout_constraintStart_toStartOf="@+id/iv_watching" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
