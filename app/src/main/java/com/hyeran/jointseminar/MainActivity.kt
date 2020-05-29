@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     private fun addFragment(fragment: Fragment) {
 
         val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.framelayout_main, HomeFragment()).commitAllowingStateLoss()
+        transaction.replace(R.id.framelayout_main, fragment).commitAllowingStateLoss()
 
     }
 
