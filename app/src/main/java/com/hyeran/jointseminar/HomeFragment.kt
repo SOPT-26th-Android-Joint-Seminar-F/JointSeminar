@@ -20,10 +20,10 @@ import kotlinx.android.synthetic.main.fragment_home.*
  */
 class HomeFragment : Fragment() {
 
-    private lateinit var playlistAdapter : PlaylistAdapter
-    lateinit var preferAdapter : PreferAdapter
-    lateinit var mylistAdapter : MylistAdapter
-    lateinit var watchingAdapter : WatchingAdapter
+    private lateinit var playlistAdapter: PlaylistAdapter
+    lateinit var preferAdapter: PreferAdapter
+    lateinit var mylistAdapter: MylistAdapter
+    lateinit var watchingAdapter: WatchingAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -50,9 +50,8 @@ class HomeFragment : Fragment() {
         watchingAdapter = WatchingAdapter(view.context)
         rv_watching_home.adapter = watchingAdapter
         loadWatchingDatas()
-
-
     }
+
 
     private fun loadPlaylistDatas() {
 
@@ -64,11 +63,11 @@ class HomeFragment : Fragment() {
                     title = "유럽 비행기에서",
                     count = 12,
                     date = "2020.05.20"
-               )
+                )
             )
             add(
                 PlaylistData(
-                    title = "KT에서",
+                    title = "KTX에서",
                     count = 2,
                     date = "2020.05.22"
                 )
@@ -86,7 +85,6 @@ class HomeFragment : Fragment() {
         playlistAdapter.notifyDataSetChanged()
     }
 
-
     private fun loadPreferDatas() {
 
         val datas = mutableListOf<PreferData>()
@@ -94,15 +92,18 @@ class HomeFragment : Fragment() {
             add(
                 PreferData(
                     img_contents = context?.getDrawable(R.drawable.mainview_img_itaewonclass)
-            ))
+                )
+            )
             add(
                 PreferData(
                     img_contents = context?.getDrawable(R.drawable.mainview_img_camelliaflower)
-                ))
+                )
+            )
             add(
                 PreferData(
                     img_contents = context?.getDrawable(R.drawable.mainview_img_1994)
-                ))
+                )
+            )
         }
         preferAdapter.datas = datas
         preferAdapter.notifyDataSetChanged()
@@ -115,15 +116,18 @@ class HomeFragment : Fragment() {
             add(
                 MylistData(
                     img_mylist = context?.getDrawable(R.drawable.mainview_img_lacasadepapel)
-                ))
+                )
+            )
             add(
                 MylistData(
                     img_mylist = context?.getDrawable(R.drawable.mainview_img_kingdom)
-                ))
+                )
+            )
             add(
                 MylistData(
                     img_mylist = context?.getDrawable(R.drawable.mainview_img_sexeducation)
-                ))
+                )
+            )
         }
         mylistAdapter.datas = datas
         mylistAdapter.notifyDataSetChanged()
@@ -137,17 +141,20 @@ class HomeFragment : Fragment() {
                 WatchingData(
                     img_watching = context?.getDrawable(R.drawable.mainview_img_hospital_playlist),
                     tv_season = "시즌 1: 10회"
-                ))
+                )
+            )
             add(
                 WatchingData(
                     img_watching = context?.getDrawable(R.drawable.mainview_img_extracurricular),
                     tv_season = "시즌 1: 8회"
-                ))
+                )
+            )
             add(
                 WatchingData(
                     img_watching = context?.getDrawable(R.drawable.mainview_img_heartsignal),
                     tv_season = "시즌 3: 7회"
-                ))
+                )
+            )
 
         }
         watchingAdapter.datas = datas
