@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/black"
@@ -15,9 +14,176 @@
         tools:context=".HomeFragment">
 
         <!-- TODO: 포스터 (평화) -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <ImageView
+                   android:id="@+id/iv_poster"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/mainview_img_lacasadepapel"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintHorizontal_bias="0.0"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintVertical_bias="0.0" />
+
+               <ImageView
+                   android:id="@+id/iv_netflix_logo"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/mainview_icon_logo"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <ImageButton
+                   android:id="@+id/ib_main_search"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginEnd="10dp"
+                   android:background="@drawable/mainview_icon_search"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
 
 
-        <!-- TODO: 콘텐츠 (희원) -->
+               <ImageButton
+                   android:id="@+id/ib_select"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="35dp"
+                   android:layout_marginTop="300dp"
+                   android:layout_marginEnd="29dp"
+                   android:background="@drawable/mainview_icon_select"
+                   app:layout_constraintEnd_toStartOf="@+id/ib_main_play"
+                   app:layout_constraintStart_toStartOf="@+id/iv_poster"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <ImageButton
+                   android:id="@+id/ib_main_play"
+                   android:layout_width="137dp"
+                   android:layout_height="48dp"
+                   android:layout_marginTop="297dp"
+                   android:background="@drawable/mainview_btn_play"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="@+id/iv_poster" />
+
+               <ImageButton
+                   android:id="@+id/ib_main_information"
+                   android:layout_width="48dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="29dp"
+                   android:layout_marginTop="300dp"
+                   android:layout_marginEnd="38dp"
+                   android:background="@drawable/mainview_icon_information"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toEndOf="@+id/ib_main_play"
+                   app:layout_constraintTop_toTopOf="@+id/iv_poster" />
+
+
+               <ImageButton
+                   android:id="@+id/ib_tense"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="269dp"
+                   android:layout_marginEnd="10dp"
+                   android:background="@drawable/mainview_btn_tense_selected"
+                   app:layout_constraintEnd_toStartOf="@+id/ib_excited"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <ImageButton
+                   android:id="@+id/ib_excited"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="269dp"
+                   android:layout_marginEnd="5dp"
+                   android:background="@drawable/mainview_btn_excited_selected"
+                   app:layout_constraintEnd_toStartOf="@+id/guideline"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <ImageButton
+                   android:id="@+id/ib_thrilling"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="5dp"
+                   android:layout_marginTop="269dp"
+                   android:background="@drawable/mainview_btn_trilling"
+                   app:layout_constraintStart_toStartOf="@+id/guideline"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <ImageButton
+                   android:id="@+id/ib_multicasting"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="10dp"
+                   android:layout_marginTop="269dp"
+                   android:background="@drawable/mainview_btn_multicasting"
+                   app:layout_constraintStart_toEndOf="@+id/ib_thrilling"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <ImageView
+                   android:id="@+id/mainview_circle1"
+                   android:layout_width="8dp"
+                   android:layout_height="8dp"
+                   android:layout_marginTop="356dp"
+                   android:layout_marginEnd="20dp"
+                   android:src="@drawable/viewpager_circle_1"
+                   app:layout_constraintEnd_toStartOf="@+id/mainview_circle2"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <ImageView
+                   android:id="@+id/mainview_circle2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="356dp"
+                   android:src="@drawable/viewpager_circle_2"
+                   app:layout_constraintHorizontal_bias="0.5"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <ImageView
+                   android:id="@+id/mainview_circle3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="20dp"
+                   android:layout_marginTop="356dp"
+                   android:src="@drawable/viewpager_circle_2"
+                   app:layout_constraintStart_toEndOf="@+id/mainview_circle2"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <androidx.constraintlayout.widget.Guideline
+                   android:id="@+id/guideline"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   app:layout_constraintGuide_percent="0.51" />
+
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+
+       <!-- <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vp_poster"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+            </androidx.viewpager.widget.ViewPager>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout> -->
+
+
+
+           <!-- TODO: 콘텐츠 (희원) -->
 
 
         <!-- TODO: 플레이리스트 (혜란) -->
