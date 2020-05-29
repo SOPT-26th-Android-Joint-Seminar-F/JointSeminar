@@ -4,12 +4,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
-import com.hyeran.jointseminar.poster_item.PosterAdapter
+
 
 class MainActivity : AppCompatActivity() {
 
-    var main_adapter =
-        PosterAdapter(supportFragmentManager)
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
