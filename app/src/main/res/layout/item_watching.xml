@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginRight="15dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_watching"
+            android:layout_width="125dp"
+            android:layout_height="229dp"
+            android:src="@drawable/mainview_img_hospital_playlist"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/mainview_icon_info_1"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_watching"
+            app:layout_constraintEnd_toEndOf="@+id/iv_watching"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/iv_watching"
+            app:layout_constraintTop_toTopOf="@+id/iv_watching"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_season"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/font_regular"
+            android:lineSpacingExtra="6sp"
+            android:textColor="#ffffff"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/iv_watching"
+            tools:text="시즌 1: 10회" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:progressTint="#e50914"
+            android:background="#808080"
+            android:max="100"
+            android:progress="78"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="@+id/iv_watching"
+            app:layout_constraintStart_toStartOf="@+id/iv_watching" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
