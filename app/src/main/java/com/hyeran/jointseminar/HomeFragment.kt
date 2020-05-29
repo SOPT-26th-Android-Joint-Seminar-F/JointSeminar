@@ -27,10 +27,11 @@ class HomeFragment : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_home, container, false)
 
+
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-
 
         playlistAdapter = PlaylistAdapter(view.context)
         rv_playlist_home.adapter = playlistAdapter
