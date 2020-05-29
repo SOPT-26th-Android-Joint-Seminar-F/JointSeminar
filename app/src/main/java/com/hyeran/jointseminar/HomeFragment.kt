@@ -1,10 +1,12 @@
 package com.hyeran.jointseminar
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+<<<<<<<<< Temporary merge branch 1
 import com.hyeran.jointseminar.mylist_item.MylistAdapter
 import com.hyeran.jointseminar.mylist_item.MylistData
 import com.hyeran.jointseminar.playlist_item.PlaylistAdapter
@@ -13,6 +15,14 @@ import com.hyeran.jointseminar.prefer_item.PreferAdapter
 import com.hyeran.jointseminar.prefer_item.PreferData
 import com.hyeran.jointseminar.watching_item.WatchingAdapter
 import com.hyeran.jointseminar.watching_item.WatchingData
+=========
+import android.widget.ViewFlipper
+import androidx.viewpager.widget.PagerAdapter
+import androidx.viewpager.widget.ViewPager
+import com.hyeran.jointseminar.playlist_item.PlaylistAdapter
+import com.hyeran.jointseminar.playlist_item.PlaylistData
+import kotlinx.android.synthetic.*
+>>>>>>>>> Temporary merge branch 2
 import kotlinx.android.synthetic.main.fragment_home.*
 
 /**
@@ -30,19 +40,26 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_home, container, false)
+
+
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+<<<<<<<<< Temporary merge branch 1
         super.onViewCreated(view, savedInstanceState)
 
         preferAdapter = PreferAdapter(view.context)
         rv_prefer_home.adapter = preferAdapter
         loadPreferDatas()
+=========
+>>>>>>>>> Temporary merge branch 2
 
         playlistAdapter = PlaylistAdapter(view.context)
         rv_playlist_home.adapter = playlistAdapter
         loadPlaylistDatas()
 
+<<<<<<<<< Temporary merge branch 1
         mylistAdapter = MylistAdapter(view.context)
         rv_mylist_home.adapter = mylistAdapter
         loadMylistDatas()
@@ -52,7 +69,10 @@ class HomeFragment : Fragment() {
         loadWatchingDatas()
 
 
+=========
+>>>>>>>>> Temporary merge branch 2
     }
+
 
     private fun loadPlaylistDatas() {
 
@@ -86,6 +106,7 @@ class HomeFragment : Fragment() {
         playlistAdapter.notifyDataSetChanged()
     }
 
+<<<<<<<<< Temporary merge branch 1
 
     private fun loadPreferDatas() {
 
@@ -153,4 +174,6 @@ class HomeFragment : Fragment() {
         watchingAdapter.datas = datas
         watchingAdapter.notifyDataSetChanged()
     }
+=========
+>>>>>>>>> Temporary merge branch 2
 }
