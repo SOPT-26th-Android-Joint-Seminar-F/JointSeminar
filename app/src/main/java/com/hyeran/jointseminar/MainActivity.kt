@@ -11,6 +11,8 @@ class MainActivity : AppCompatActivity() {
     var main_adapter =
         PosterAdapter(supportFragmentManager)
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
