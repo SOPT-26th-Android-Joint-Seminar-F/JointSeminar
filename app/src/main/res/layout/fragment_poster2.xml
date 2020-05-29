@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".poster_item.Poster2Fragment">
+    tools:context=".poster_item.PosterFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <ImageView
         android:id="@+id/iv_poster2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/mainview_img_lacasadepapel"/>
+        android:background="@drawable/mainview_img_poster"/>
 
 </FrameLayout>
