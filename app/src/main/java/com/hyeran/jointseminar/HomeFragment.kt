@@ -68,7 +68,7 @@ class HomeFragment : Fragment() {
             )
             add(
                 PlaylistData(
-                    title = "KT에서",
+                    title = "KTX에서",
                     count = 2,
                     date = "2020.05.22"
                 )
