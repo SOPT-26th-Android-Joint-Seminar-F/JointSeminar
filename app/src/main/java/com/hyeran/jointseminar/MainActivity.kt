@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         addFragment(HomeFragment())
 
+
     }
 
     private fun addFragment(fragment: Fragment) {
