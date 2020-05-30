@@ -22,7 +22,7 @@ class WatchingViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     fun bind(watchingData : WatchingData){
         Glide.with(itemView).load(watchingData.img_watching).into(img_watching)
         tv_season.text = watchingData.tv_season
-        
+
     }
 
 }
