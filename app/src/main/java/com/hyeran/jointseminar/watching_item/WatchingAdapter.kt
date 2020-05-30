@@ -3,7 +3,9 @@ package com.hyeran.jointseminar.watching_item
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
+import com.hyeran.jointseminar.ContentFragment
 import com.hyeran.jointseminar.R
 import com.hyeran.jointseminar.prefer_item.PreferData
 import com.hyeran.jointseminar.prefer_item.PreferViewHolder
@@ -21,5 +23,12 @@ class WatchingAdapter(private val context : Context) : RecyclerView.Adapter<Watc
 
     override fun onBindViewHolder(holder: WatchingViewHolder, position: Int) {
         holder.bind(datas[position])
+        holder.img_watching.setOnClickListener {
+            val transaction = (context as AppCompatActivity).supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.framelayout_main, ContentFragment())
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
     }
 }
+
