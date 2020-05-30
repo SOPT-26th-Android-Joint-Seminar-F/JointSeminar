@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.FragmentTransaction
+import kotlinx.android.synthetic.main.fragment_content.*
 
 /**
  * A simple [Fragment] subclass.
@@ -16,5 +18,12 @@ class ContentFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_content, container, false)
+    }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        contentsview_btnx.setOnClickListener{
+
+        }
     }
 }
