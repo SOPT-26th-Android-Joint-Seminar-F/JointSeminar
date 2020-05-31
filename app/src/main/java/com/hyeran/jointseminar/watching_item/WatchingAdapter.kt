@@ -7,8 +7,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.hyeran.jointseminar.ContentFragment
 import com.hyeran.jointseminar.R
-import com.hyeran.jointseminar.prefer_item.PreferData
-import com.hyeran.jointseminar.prefer_item.PreferViewHolder
 
 class WatchingAdapter(private val context : Context) : RecyclerView.Adapter<WatchingViewHolder>() {
     var datas = mutableListOf<WatchingData>()

@@ -4,17 +4,24 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
-import androidx.viewpager.widget.ViewPager
 import com.hyeran.jointseminar.poster_item.PosterAdapter
 
 class MainActivity : AppCompatActivity() {
 
+    var main_adapter = PosterAdapter(supportFragmentManager)
+    companion object{
+        val changeFrag = fun(){
+
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         addFragment(HomeFragment())
+
+
     }
 
     private fun addFragment(fragment: Fragment) {
