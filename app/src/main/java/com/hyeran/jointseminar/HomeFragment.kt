@@ -9,6 +9,8 @@ import com.hyeran.jointseminar.mylist_item.MylistAdapter
 import com.hyeran.jointseminar.mylist_item.MylistData
 import com.hyeran.jointseminar.playlist_item.PlaylistAdapter
 import com.hyeran.jointseminar.playlist_item.PlaylistData
+import com.hyeran.jointseminar.poster_item.Poster
+import com.hyeran.jointseminar.poster_item.PosterAdapter
 import com.hyeran.jointseminar.prefer_item.PreferAdapter
 import com.hyeran.jointseminar.prefer_item.PreferData
 import com.hyeran.jointseminar.watching_item.WatchingAdapter
@@ -35,6 +37,9 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val adapter = PosterAdapter(posterlist)
+        vp_poster.adapter = adapter
+
         preferAdapter = PreferAdapter(view.context)
         rv_prefer_home.adapter = preferAdapter
         loadPreferDatas()
@@ -50,6 +55,8 @@ class HomeFragment : Fragment() {
         watchingAdapter = WatchingAdapter(view.context)
         rv_watching_home.adapter = watchingAdapter
         loadWatchingDatas()
+
+
     }
 
 
@@ -159,5 +166,13 @@ class HomeFragment : Fragment() {
         }
         watchingAdapter.datas = datas
         watchingAdapter.notifyDataSetChanged()
+    }
+
+    companion object{
+         val posterlist = arrayListOf(
+             Poster("mainview_img_poster"),
+             Poster("mainview_img_poster"),
+             Poster("mainview_img_poster")
+         )
     }
 }

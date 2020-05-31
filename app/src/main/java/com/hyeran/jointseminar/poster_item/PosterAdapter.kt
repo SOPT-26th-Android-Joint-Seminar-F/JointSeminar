@@ -1,29 +1,34 @@
 package com.hyeran.jointseminar.poster_item
 
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentPagerAdapter
-import com.hyeran.jointseminar.poster_item.Poster2Fragment
-import com.hyeran.jointseminar.poster_item.Poster3Fragment
-import com.hyeran.jointseminar.poster_item.PosterFragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.viewpager.widget.PagerAdapter
+import com.hyeran.jointseminar.R
+import kotlinx.android.synthetic.main.fragment_poster.view.*
 
-class PosterAdapter : FragmentPagerAdapter{
+class PosterAdapter (private val list: ArrayList<Poster>): PagerAdapter(){
 
-    var data1 : Fragment = PosterFragment()
-    var data2 : Fragment = Poster2Fragment()
-    var data3 : Fragment = Poster3Fragment()
+    override fun instantiateItem(container: ViewGroup, position: Int): Any {
+        val inflater = LayoutInflater.from(container.context)
+        val view = inflater.inflate(R.layout.fragment_poster, container, false)
 
-    private val fragments: ArrayList<Fragment> = ArrayList()
 
-    var mData : ArrayList<Fragment> = arrayListOf(data1,data2,data3)
+        view.iv_poster.setImageResource(list[position].getImageID(container.context))
 
-    constructor(fm : FragmentManager) : super(fm)
+        container.addView(view)
+        return view
+    }
 
-    override fun getItem(position: Int): Fragment {
-        return mData.get(position)
+    override fun destroyItem(container: ViewGroup, position: Int, `object`: Any) {
+        container.removeView(`object` as View?)
+    }
+
+    override fun isViewFromObject(view: View, `object`: Any): Boolean {
+        return view ==`object`
     }
 
     override fun getCount(): Int {
-        return mData.size
+        return list.size
     }
 }
