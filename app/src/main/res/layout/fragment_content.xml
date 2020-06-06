@@ -142,13 +142,13 @@
             android:id="@+id/contentsview_txt6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="395dp"
+            android:layout_marginTop="24dp"
             android:background="@drawable/mainview_btn_reality"
             app:layout_constraintEnd_toStartOf="@+id/contentsview_txt7"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/contentsview_txt5" />
 
         <TextView
             android:id="@+id/contentsview_txt7"
@@ -188,31 +188,28 @@
 
         <Button
             android:id="@+id/contentsview_play"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="37dp"
-            android:layout_marginTop="430dp"
-            android:layout_marginEnd="24dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="40dp"
             android:background="@drawable/contentsview_btn_playtwo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/contentsview_txt6" />
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="29dp"
-            android:layout_marginTop="481dp"
-            android:layout_marginEnd="196dp"
+            android:layout_marginTop="4dp"
             android:fontFamily="@font/font_bold"
             android:lineSpacingExtra="6sp"
             android:text="시즌 3: 6화 2020-05-06"
             android:textColor="#ffffff"
             android:textSize="13sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toStartOf="@+id/contentsview_play"
+            app:layout_constraintTop_toBottomOf="@+id/contentsview_play" />
 
         <ProgressBar
             android:id="@+id/progressBar2"
@@ -220,35 +217,32 @@
             android:layout_width="232dp"
             android:layout_height="2dp"
             android:layout_marginStart="28dp"
-            android:layout_marginTop="514dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="100dp"
             android:backgroundTint="#808080"
             android:progressTint=" #ca1a1e"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
         <TextView
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="279dp"
-            android:layout_marginTop="508dp"
-            android:layout_marginEnd="21dp"
             android:lineSpacingExtra="4sp"
             android:text="남은 시간 : 20분"
             android:textColor="#a2a2a2"
             android:textSize="9sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintBottom_toBottomOf="@+id/progressBar2"
+            app:layout_constraintEnd_toEndOf="@+id/contentsview_play"
+            app:layout_constraintTop_toTopOf="@+id/progressBar2" />
 
         <TextView
             android:id="@+id/textView10"
             android:layout_width="313dp"
             android:layout_height="46dp"
             android:layout_marginStart="29dp"
-            android:layout_marginTop="540dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="29dp"
             android:lineSpacingExtra="5sp"
             android:text="처음 뵙겠습니다. 7번째 입주자 &apos;사자&apos;의 등장으로 술렁이는 시그널 하우스.
@@ -259,59 +253,52 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.65"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="118dp"
             android:layout_height="wrap_content"
 
-            android:layout_marginStart="29dp"
             android:layout_marginTop="16dp"
             android:lineSpacingExtra="5sp"
             android:text="출연 : 이상민, 윤시윤, 김이나"
             android:textColor="#a2a2a2"
             android:textSize="10sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.098"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView10"
             app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="69dp"
             android:layout_height="52dp"
-            android:layout_marginStart="19dp"
-            android:layout_marginTop="633dp"
-            android:layout_marginEnd="272dp"
+            android:layout_marginTop="16dp"
             android:background="@drawable/contentsview_icon_mylist_1"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="105dp"
             android:layout_height="49dp"
-            android:layout_marginStart="88dp"
-            android:layout_marginTop="633dp"
-            android:layout_marginEnd="167dp"
             android:background="@drawable/contentsview_icon_star"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintEnd_toStartOf="@+id/button6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button4"
+            app:layout_constraintTop_toTopOf="@+id/button4" />
 
         <Button
             android:id="@+id/button6"
             android:layout_width="47dp"
             android:layout_height="48dp"
-            android:layout_marginStart="193dp"
-            android:layout_marginTop="633dp"
-            android:layout_marginEnd="120dp"
             android:background="@drawable/contentsview_icon_share"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/button5"
+            app:layout_constraintTop_toTopOf="@+id/button5" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
